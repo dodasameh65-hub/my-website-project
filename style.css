@@ -1,0 +1,141 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #f4f6f9;
+}
+
+/* NAVBAR */
+nav {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* CONTAINER */
+.container {
+    background: white;
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* HEADINGS */
+h1 {
+    color: #1e3c72;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #2a5298;
+    margin-bottom: 10px;
+}
+
+/* TABLE */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #2a5298;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f6ff;
+}
+
+tr:hover {
+    background-color: #e8eef7;
+    transition: 0.3s;
+}
+
+/* FORM */
+input, textarea {
+    width: 85%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #2a5298;
+}
+
+button {
+    background-color: #2a5298;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1e3c72;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .container {
+        width: 85%;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 8px;
+    }
+
+    input, textarea {
+        width: 95%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
